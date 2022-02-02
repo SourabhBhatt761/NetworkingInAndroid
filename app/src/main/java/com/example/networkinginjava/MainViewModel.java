@@ -1,4 +1,4 @@
-package com.example.networkinginjava.api;
+package com.example.networkinginjava;
 
 import android.util.Log;
 
@@ -6,8 +6,8 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.networkinginjava.api.empty.NetworkInterface;
-import com.example.networkinginjava.api.empty.RetrofitClient;
+import com.example.networkinginjava.api.network.NetworkInterface;
+import com.example.networkinginjava.api.network.RetrofitClient;
 import com.example.networkinginjava.api.model.UsersResponse;
 
 import retrofit2.Call;

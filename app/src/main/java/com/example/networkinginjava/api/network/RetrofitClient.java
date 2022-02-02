@@ -1,4 +1,4 @@
-package com.example.networkinginjava.api.empty;
+package com.example.networkinginjava.api.network;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

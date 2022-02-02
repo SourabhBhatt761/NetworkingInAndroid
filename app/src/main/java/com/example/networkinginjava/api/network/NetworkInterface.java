@@ -1,4 +1,4 @@
-package com.example.networkinginjava.api.empty;
+package com.example.networkinginjava.api.network;
 
 import com.example.networkinginjava.api.model.UsersResponse;
 
