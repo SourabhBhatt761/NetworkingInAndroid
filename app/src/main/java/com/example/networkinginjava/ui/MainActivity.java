@@ -26,7 +26,7 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
-    private RetrofitClient retrofitClient = RetrofitClient.getInstance();
+    private final RetrofitClient retrofitClient = RetrofitClient.getInstance();
     public MainViewModel mainViewModel;
     MyRecyclerViewAdapter myRecyclerViewAdapter;
 

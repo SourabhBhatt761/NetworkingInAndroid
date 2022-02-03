@@ -11,10 +11,12 @@ public class RetrofitClient {
 
     private RetrofitClient() {
 
+        //retrofit creation
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())     //to convert json to gson.
                 .build();
+
         myApi = retrofit.create(NetworkInterface.class);
     }
 

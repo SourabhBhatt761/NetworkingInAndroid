@@ -22,7 +22,10 @@ public interface NetworkInterface {
     /*@GET        -> to fetch the data from internet */
     /*@Mutltipart -> If we need to upload images or files, we need to send by using Multipart forms.
                         We will to mark the endpoint with @Multipart, and label at least one parameter with @Part.*/
-
+    /*@Post       -> this is used to create new resources with the help of api in backend*/
+    /*@Put        -> this is used to update/REPLACE the existing ENTITY */
+    /*@Patch      -> this is used to update/REPLACE the existing data ITEMS individually.*/
+    /*@Delete     -> this is used to delete the data */
 
     /*@Query -> after question mark data filled in url is set by annotation @Query*/
     /*@Path -> data which we input before question mark in url is set by this annotation */
