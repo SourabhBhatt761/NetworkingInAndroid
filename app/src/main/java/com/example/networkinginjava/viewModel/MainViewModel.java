@@ -1,4 +1,4 @@
-package com.example.networkinginjava;
+package com.example.networkinginjava.viewModel;
 
 import android.util.Log;
 
@@ -25,19 +25,19 @@ public class MainViewModel extends ViewModel {
 
     private void getUsersListFromApi(int page) {
 
-         Call<UsersResponse> response = myApi.getUsersListFromCallFn(page);
-         response.enqueue(new Callback<UsersResponse>() {
-             @Override
-             public void onResponse(Call<UsersResponse> call, Response<UsersResponse> response) {
-                 if (response.isSuccessful()) {
-                        usersResponseMutableLiveData.setValue(response.body());         //setting the value in mutable live data
-                 }
-             }
-             @Override
-             public void onFailure(Call<UsersResponse> call, Throwable t) {
-                 Log.i("uni",t.getMessage());
-             }
-         });
+        Call<UsersResponse> response = myApi.getUsersListFromCallFn(page);
+        response.enqueue(new Callback<UsersResponse>() {
+            @Override
+            public void onResponse(Call<UsersResponse> call, Response<UsersResponse> response) {
+                if (response.isSuccessful()) {
+                    usersResponseMutableLiveData.setValue(response.body());         //setting the value in mutable live data
+                }
+            }
+            @Override
+            public void onFailure(Call<UsersResponse> call, Throwable t) {
+                Log.i("uni",t.getMessage());
+            }
+        });
 
     }
 

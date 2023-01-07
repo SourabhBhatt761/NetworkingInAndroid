@@ -8,12 +8,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.example.networkinginjava.MainViewModel;
 import com.example.networkinginjava.api.network.RetrofitClient;
 import com.example.networkinginjava.api.model.DataItem;
 import com.example.networkinginjava.api.model.UsersResponse;
 import com.example.networkinginjava.databinding.ActivityMainBinding;
 import com.example.networkinginjava.ui.adapters.MyRecyclerViewAdapter;
+import com.example.networkinginjava.viewModel.MainViewModel;
 
 import java.io.File;
 import java.util.List;

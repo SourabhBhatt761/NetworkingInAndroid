@@ -37,6 +37,9 @@ public interface NetworkInterface {
     Call<UsersResponse> getUsersListFromCallFn(@Query("page") int page);
 
     @GET("/api/users")
+    UsersResponse getUsersListFromFn(@Query("page") int page);
+
+    @GET("/api/users")
     Call<List<UsersResponse>> getUsersListFromList();
 
     @GET("/{api}/users")
@@ -53,4 +56,8 @@ public interface NetworkInterface {
     @Multipart
     @POST("some/endpoint")
     Call<Response> uploadImage(@Part("description") String description, @Part("image") RequestBody image);
+
+    public static void main(){
+
+    }
 }
